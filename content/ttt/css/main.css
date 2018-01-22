@@ -1,0 +1,57 @@
+/*
+General CSS
+*/				main {
+		text-align: center;
+			width: 100%;
+	}
+	table {
+		margin: 25px auto;
+		padding: 18px;
+		background-color: white;
+		color: green;
+		font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+	}
+	td {
+		height: 70px;
+		width: 70px;
+		font-size: 2em;
+		font-family: sans-serif;
+		border: 1px solid green;
+		background-color: transparent;
+	}
+	td:nth-child(1) 
+		{border-left-style: none;}
+	td:nth-child(3) 
+		{border-right-style: none;}
+	tr:nth-child(1)>td 
+		{border-top-style: none;}
+	tr:nth-child(3)>td 
+		{border-bottom-style: none;}
+	
+	header 
+		{text-align: center;}
+	footer 
+		{text-align: center;}
+/*
+Responsive CSS
+*/			
+	@media all and ( max-device-width: 640px ) and 
+	( max-width: 640px ){
+		table {
+			width: 100%;
+			margin: 25px auto;
+			padding: 18px;
+			background-color: white;
+			color: GREEN;
+			font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+		}
+		header {
+			display: none;
+			text-align: center;
+		}
+		h3 {		
+			font-size: 2em; 
+			margin:0; 
+			padding:0;
+		}	
+	}

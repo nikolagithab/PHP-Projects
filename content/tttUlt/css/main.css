@@ -1,0 +1,177 @@
+/*
+	main css file for ultimate TicTacToe
+*/
+
+body {
+    background: #111;
+	color: white;
+}
+main, footer, header, .help, .stats {	
+	margin: auto;   
+	max-width: 500px;
+	text-align: center;
+	width: 100%;
+}
+
+	h3 {
+		font-family: 'Rock Salt', cursive;
+	}
+
+	main {
+		text-align: center;
+		width: 100%;
+		background-color:  #e9e9e9;
+		background-image: linear-gradient(to bottom, #bbb 0%, #eee 100%);
+	}
+	div {
+		margin: 1px auto;
+	}
+	.outerTable {
+		display:table; 
+		width:500px;
+		text-align:centre; 
+		margin-top:5px;
+	}
+	.outerRow {
+		display:table-row;
+	}
+	.board {
+		display:table-cell; 
+		padding:5px; 
+	}
+	table {
+		margin: auto;
+		background-color: white;
+		color: green;
+		font-family: Helvetica,"Lucida Grande",Arial,sans-serif;
+	}
+	td {
+		height: 70px;
+		width: 70px;
+		font-size: 1.5em;
+		font-family: sans-serif;
+		border: solid green;
+		background-color: transparent;
+		padding: 0px;
+	}
+	td:nth-child(1) 
+		{border-left-style: none;}
+	td:nth-child(3) 
+		{border-right-style: none;}
+	tr:nth-child(1)>td 
+		{border-top-style: none;}
+	tr:nth-child(3)>td 
+		{border-bottom-style: none;}
+
+	header 
+		{text-align: center;}
+	footer 
+		{text-align: center;}
+
+	#msg1, #msg2, #msg3, #msg4, #msg5, #msg6, #msg7, #msg8, #msg9 {
+		background-color: orange;
+		border: 1px #fff solid;
+		border-radius: 5px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 0.5em;
+		padding: 10px 5px;
+		text-decoration: none;
+		width: 100%;
+		margin: 2px;
+		display: block;
+	}
+	
+	/* 
+	[Source: Classnotes]
+	GENERAL STYLES
+	all thing with navigation: 
+	nav
+	a
+	a:active
+	a:hover
+	*/
+	nav {
+		margin: 20px auto;
+		width: 150px;
+	}
+	nav a {
+		background: #a4a4a4;
+		color: #fff;
+		display: inline-block;
+		font-family: Lato, sans-serif;
+		font-size: 15px;
+		padding: 7px;
+		text-decoration: none;
+	}
+	nav a.active, nav a:hover {
+		background: #c2c2c2;
+		color: #818181; 
+	}
+	
+	/* 
+	[Source: Classnotes]
+	CONTAINERS: overlays for help and stats
+	#messg
+	#help
+	*/
+	#messg, #help {         
+		border: 			1px solid white; 
+		border-radius: 		3px;
+		box-shadow: 		1px 1px 5px black, -1px -1px 5px white;
+		display: 			none; 
+		height: 			50%;
+		left: 				50%;
+		margin: 			auto; 
+		padding: 			20px;
+		position: 			absolute;
+		text-align: 		center;
+		top: 				50%;
+		transform: 			translate(-50%, -50%);
+		width: 				80%;
+		min-width:  		280px;	
+		z-index: 			200;
+		background-color: 	#bbb;
+		background-image: 	linear-gradient(to bottom, #bbb 0%, #eee 100%);	
+	}
+
+	@media all and ( max-device-width: 640px ) and 
+	( max-width: 640px ){
+		table {
+			width: 100%;
+			margin: 1px auto;
+			padding: 1px;
+			background-color: white;
+			color: GREEN;
+			font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+		}
+		td {
+		height: 40px;
+		width: 40px;
+		font-size: 1em;
+		}
+		header {
+			display: none;
+			text-align: center;
+		}
+		h3 {		
+			font-size: 2em; 
+			margin:0; 
+			padding:0;
+		}
+		
+		button {
+		background-color: orange;
+		border: 1px #fff solid;
+		border-radius: 1px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 1em;
+		padding: 1px 1px;
+		text-decoration: none;
+		/* width: 150px; */
+		margin: 1px;
+		}
+		
+		
+	}
